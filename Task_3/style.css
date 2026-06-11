@@ -28,9 +28,9 @@ a[href*="tutedude.com"] {
   color: green;
   background: yellow;
 }
-li:nth-child(2){
+ol li:nth-child(2){
 color:blue;
 }
-li:nth-child(3){
+ol li:nth-child(3){
 color:red;
 }
