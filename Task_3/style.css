@@ -1,0 +1,36 @@
+body{
+    background:rgb(255, 106, 0);
+}
+h3{
+    color:black;
+}
+.head{
+    color:darkblue;
+}
+#bglime{
+   background:lime;
+}
+#para{
+    color:green;
+}
+p{
+    color:white;
+}
+ul{
+    color: white;
+}
+a[href*="google.com"] {
+  color: blue;
+  background: rgb(121, 121, 221);
+}
+
+a[href*="tutedude.com"] {
+  color: green;
+  background: yellow;
+}
+li:nth-child(2){
+color:blue;
+}
+li:nth-child(3){
+color:red;
+}
