@@ -34,3 +34,10 @@ color:blue;
 ol li:nth-child(3){
 color:red;
 }
+.red-text{
+    color:red;
+}
+.black-text{
+    color:black;
+    font-size:200%
+}
