@@ -12,3 +12,6 @@ Task 3 :
 https://mg-mukeshgupta.github.io/progressStack/Task_3/
 Task 4 :
 https://mg-mukeshgupta.github.io/progressStack/Task_4/
+Task 5 :
+https://mg-mukeshgupta.github.io/progressStack/Task_5/
+
