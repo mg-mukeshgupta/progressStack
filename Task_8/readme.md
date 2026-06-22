@@ -1,6 +1,7 @@
-# Task 7 – HTML & CSS Media Queries
+# Task 8 – HTML & CSS Hamburger Menu in Mobile view
 
-This project demonstrates the use of media queries where I have changed the inline display to flex as its the modified and better version of task 5 having 3 different aspect view that is for laptop by default , then tablet having 1020px and less upto 500px after whihc the mobile view concept is used. Taken the resolution as reference and it might not be so much of accurate still works fine for tablet and mobile,
+All the html and css are same as task 7 except for the mbile view in css and additionally added menu-list in HTML for Hamburger menu button.
+This project demonstrates the use of media queries where I have to add hamburger menu button explicitily for the mobile view where we can see the focus/checked effect that works when clicked and can only be seen in the mobile view resolution.
 All styling is managed in `style.css` linked to `index.html`.
 
 ## How to Run
