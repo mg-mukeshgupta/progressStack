@@ -18,3 +18,5 @@ Task 6 :
 https://mg-mukeshgupta.github.io/progressStack/Task_6/
 Task 7 :
 https://mg-mukeshgupta.github.io/progressStack/Task_7/
+Task 8 :
+https://mg-mukeshgupta.github.io/progressStack/Task_8/
