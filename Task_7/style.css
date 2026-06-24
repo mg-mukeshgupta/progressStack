@@ -5,6 +5,10 @@
 }
 
 body{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,48 +19,50 @@ body{
 /* for the laptop view */
 
 .navbar{
-    width: 100vw;
+    /* align-self: center; */
+    display:flex;
+    width: 80vw;
     height: 12vh;
-    padding: 20px 50px;
-    position: relative;
-}
-
-.logo,
-.nav-link,
-.user{
-    display: inline-block;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .logo{
   color: #666;
-    width: 20vw;
+    width: 15vw;
     font-size: 35px;
     font-weight: bold;
-    padding-left: 140px;
+    justify-content: center;
+    /* padding-left: 140px; */
 }
 
 .nav-link{
+    display: flex;
+    justify-content: center;
     width: 50vw;
     text-align: center;
     list-style: none;
+    
 }
 
 .nav-link li{
-    display: inline-block;
+    display: flex;
     margin: 0 15px;
 }
 
 .nav-link a{
     text-decoration: none;
     color: #666;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .user{
-    width: 10vw;
-    padding: 12px 20px;
+    justify-content: center;
+    height:fit-content;
+    width: 15vw;
+    padding: 15px 25px;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: #b2ddfc;
     color: #026ab0;
     cursor: pointer;
@@ -66,29 +72,29 @@ body{
 }
 
 .hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
     height: 88vh;
-    padding: 40px 60px;
 }
 
 .left,
 .right{
-    display: inline-block;
-    vertical-align: middle;
+    width:40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .left{
-  float: left;
-    width: 48%;
-    padding-right: 30px;
-    padding-left: 140px;
+    justify-content: left;
+    align-items: flex-start;
+    /* width: 50%; */
 }
-
 .left h1{
-    font-size: 55px;
+    font-size: 60px;
     line-height: 1.2;
     color: #4b5b6a;
-    /* margin-bottom: 20px; */
 }
 #ex{
     margin-bottom: 20px;
@@ -96,7 +102,7 @@ body{
 }
 
 .left p{
-    font-size: 22px;
+    font-size: 25px;
     color: #8d8d8d;
     line-height: 1.5;
     margin-bottom: 30px;
@@ -117,15 +123,15 @@ body{
 }
 
 .right{
-  float: right;
-    width: 48%;
-    text-align: center;
+    flex-flow:wrap;
+    justify-content: space-evenly;
+    /* width:50%; */
 }
 
 .right img{
-    width: 80%;
-    max-width: 500px;
+    max-width:70%;
     height: auto;
+    align-self: flex-start;
  }
   /*  for tablet view*/
 @media (max-width:1020px){
