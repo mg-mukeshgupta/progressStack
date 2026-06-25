@@ -141,37 +141,30 @@ body{
     max-width: 70%;
     height: auto;
     align-self: flex-start;
-    animation: orbit  2s ease-out infinite ;
+    animation: orbit  2s linear infinite ;
 }
-@keyframes orbit{
-    0%{
-        transform: translate(0px,0px);
-    }
-   10%{
-    transform: translate(-20px,0px);
-    /* transform: scale(.9,1.1); */
-   }
-   20%{
-    transform: translate(-30px,-40px);
-   }
-   40%{
-    transform:translate(0px,-50px);
-   }
-   60%{
-    transform:translate(30px,-30px);
-   }
-   80%{
-    transform: translate(15px,-10px);
-   }
-    90%{
-     transform: scale(.9,1.1);
-   }
-   100%{
-    transform: scale(1,1);
-   }
+ @keyframes orbit{
+  0% {
+    transform: rotate(0deg) translateX(0px) rotate(0deg) scale(1, 1);
+  }
+  50.3% {
+    transform: rotate(360deg) translateX(50px) rotate(-360deg) scale(1, 1);
+  }
+  75%{
+    transform: rotate(360deg) translateX(0px) rotate(-360deg) scale(1, 1);
+  }
+
+  80.1% {
+    transform: rotate(360deg) translateX(0px) rotate(-360deg) scale(0.8, 1.1);
+  }
+  95.1% {
+    transform: rotate(360deg) translateX(0px) rotate(-360deg) scale(1, 1);
+  }
+  100% {
+    /* Returns to normal right before the loop restarts */
+    transform: rotate(360deg) translateX(0px) rotate(-360deg) scale(1, 1);
+  }
 }
-
-
 
   /*  for tablet view*/
 @media (max-width:1020px){
@@ -356,6 +349,7 @@ body{
     }
 
     .right{
+        padding-top: 80px;
         height: 40%;
     }
 
