@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+<section class="checkout-container">
+    <div class="checkout-left">
+        <p class="checkout-text">Checkout</p>
+        <h2>Contact Details</h2>
+        <div class="input-group">
+            <label>Email ID</label>
+                   <input type="email" placeholder="email@.com">
+        </div>
+        <h2 class="payment-heading">Payment</h2>
+
+        <div class="payment-box">
+
+            <div class="payment-methods">
+                <div class="payment-card active">
+                    <img src="credit-card.png" alt="Card">
+                    <span>Card</span>
+                </div>
+                <div class="payment-card">
+                    <img src="bitcoin.png" alt="Crypto">
+                    <span>Crypto</span>
+            </div>
+                <div class="payment-card">
+                 <img src="bank.png" alt="Bank">
+                 <span>Bank</span>
+                </div>
+
+            <div class="payment-card more-option">
+                    <img src="payment.png" alt="More">
+                </div>
+
+            </div>
+
+            <div class="input-group">
+                <label>Card Number</label>
+                <input type="text" placeholder="XXXXXX">
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Expiry</label>
+                   <input type="text" placeholder="MM/YY">
+                </div>
+
+                <div class="input-group">
+                    <label>CVC</label>
+                    <input type="text" placeholder="***">
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="input-group">
+                    <label>Country</label>
+
+                    <select>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>ZIP</label>
+                    <input type="text" placeholder="XXXXX">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="checkout-right">
+
+        <h1>Order Summary</h1>
+
+        <div class="summary-card">
+
+            <label>Enter Coupon Code</label>
+
+            <div class="coupon-box">
+
+                <input type="text" placeholder="COUPON CODE">
+
+                <button>
+                    Apply Coupon
+                </button>
+
+            </div>
+
+            <div class="price-row">
+                <span>Sub Total</span>
+                <span>₹4,700</span>
+            </div>
+
+            <div class="price-row">
+                <span>Taxes(if applicable)</span>
+                <span>₹199</span>
+            </div>
+
+            <div class="price-row">
+                <span>Discount</span>
+                <span>₹0</span>
+            </div>
+
+            <div class="price-row total">
+                <span>Total</span>
+                <span>₹4,999</span>
+            </div>
+
+        </div>
+
+        <button class="pay-btn">
+            Pay Now ₹4,999
+        </button>
+
+        <div class="security-icons">
+
+            <img src="ssl.png" alt="secure">
+
+            <img src="razor.png" alt="razorpay">
+
+            <img src="pp.png" alt="secure">
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
