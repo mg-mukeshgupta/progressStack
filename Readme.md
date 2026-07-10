@@ -26,3 +26,5 @@ Task 10 :
 https://mg-mukeshgupta.github.io/progressStack/Task_10/
 Task 11 :
 https://mg-mukeshgupta.github.io/progressStack/Task_11/
+Task 12 :
+https://mg-mukeshgupta.github.io/progressStack/Task_12/
