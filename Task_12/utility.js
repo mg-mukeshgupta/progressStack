@@ -4,6 +4,6 @@
 // const t=15;
 // var a=0;
 export function compound(p,r,n,t){
- return p*(1+(r/n)**(n*t));
+ return p*(1+((r/100)/n)**(n*t));
 }
 
