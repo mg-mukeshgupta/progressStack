@@ -1,4 +1,4 @@
-# Task 12 - JavaScript- Compound Interest Calculator
+# Task 13 - JavaScript- IF-ELSE STATEMENT - To check even or odd number
 
 This is a project/task to create a simple Number checking system using If and else statement and used switch cases in script.js file so that it can have all the five input one be one. Here, I have created two .js files which is linked to the main html file, to keep the code clean, and used the variables and instruction from the given task specification.
 

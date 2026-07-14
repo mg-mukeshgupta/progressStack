@@ -5,19 +5,24 @@ const c=100;
 const d=55;
 const e=999;
 
-const check=a;
-switch(check){
-    case(a):
-    nc(a);
-    case(b):
-    nc(b);
-    case(c):
-    nc(c);
-    case(d):
-    nc(d);
-    case(e):
-    nc(e);
-    break;
-    default:
-    console.log("Answered");
-}
+// const check=a;
+// switch(check){
+//     case(a):
+//     nc(a);
+//     case(b):
+//     nc(b);
+//     case(c):
+//     nc(c);
+//     case(d):
+//     nc(d);
+//     case(e):
+//     nc(e);
+//     break;
+//     default:
+//     console.log("Answered");
+// }
+nc(a);
+nc(b);
+nc(c);
+nc(d);
+nc(e);
