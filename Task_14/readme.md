@@ -6,6 +6,7 @@ This is a project/task to create different functions using loop controls to get:
 3. Check if it is an Armstrong number or not.
 4. Find all its factors and print/log them.
 5. Sum of all the number upto the given Variable.
+6. Sum of the digits of the given variable.
 
 In this project, I have programmed all the functions using flow control loop and mathematical logics.
 <!-- Also don't mind the code and comments which are in comments form -->

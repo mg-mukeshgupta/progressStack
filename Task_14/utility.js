@@ -11,7 +11,15 @@ export function sumFirst(n){
     }
 console.log("The Sum of first "+n+" number is :"+a);
 }
-
+export function digitSum(n){
+    let num=n;
+    let sum=0;
+    while(num>0){
+    sum=sum+Math.floor(num%10);
+     num=Math.floor(num/10);
+    }
+    console.log("Sum of the digits of the given variable "+n+" is : "+ sum);
+}
 export function primeCheck(n){
     let check=true;
     var i=0;

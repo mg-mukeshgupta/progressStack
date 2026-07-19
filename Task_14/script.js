@@ -1,5 +1,6 @@
 import {table as tb} from './utility.js'
 import {sumFirst as sf} from './utility.js'
+import { digitSum as ds } from './utility.js';
 import { primeCheck as pc } from './utility.js';
 import { armstrong as an } from './utility.js';
 import { factors as fc } from './utility.js';
@@ -19,6 +20,7 @@ import { factors as fc } from './utility.js';
 const n=153;
 tb(n);
 sf(n);
+ds(n);
 pc(n);
 an(n);
 fc(n);
