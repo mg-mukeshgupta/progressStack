@@ -20,45 +20,32 @@ export function digitSum(n){
     }
     console.log("Sum of the digits of the given variable "+n+" is : "+ sum);
 }
-export function primeCheck(n){
-    let check=true;
-    var i=0;
-    if(n<=1){
-        check=false;
-        
-    
-    if(n%2==0){
-        check=false;
-       
+export function primeCheck(n) {
+    let check = true;
+    if (n <= 1) {
+        check= false;
     }
-}
-    if(n==2){
-        check=true;
-       
-        // continue;
+    else if(n==2){
+        check = true;
     }
-    i=3;
-    while(i<n){
-        if(n%i==0){
-            check=false;
-           
-            break;
-        }
-        else{
-            i++;
-        }
-    }
-    // for(let i=3; i<n;i++){
-    //     if(n%i==0){
-    //         check=true;
-    //         break;
-    //     }
-    // }
-    if(check==true){
-        console.log("The Number " +n+ " is Prime Number");
+    else if(n%2==0) {
+        check = false;
     }
     else{
-        console.log("The Number "+n+ " is not a Prime Number");
+        let i = 3;
+        while (i <= Math.sqrt(n)) {
+        if (n % i == 0) {
+        check = false;
+            break;
+       }
+        i += 2;
+        }
+    }
+    if(check) {
+    console.log("The Number " + n + " is Prime Number");
+    }
+    else{
+    console.log("The Number " + n + " is not a Prime Number");
     }
 }
 //I didn't knew that I can use exponential function directly before , so I created one of my own like one in the cpp or c language manually:)
