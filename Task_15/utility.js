@@ -1,3 +1,4 @@
+// regular function
 export function maxArray(array){
     let max=array[0];
     array.forEach(item=>{
@@ -6,6 +7,7 @@ export function maxArray(array){
     }})
  console.log("The Maximum Element of the Array is "+max);
 }
+// arrow function
 export const sumArray=(array)=>{
     var sum=0;
     array.forEach(item=>{
@@ -13,7 +15,8 @@ export const sumArray=(array)=>{
     })
     console.log("Sum of all the numbers in the array is "+sum);
 }
-export const oddCount =(array)=>{
+// anonymous function
+export const oddCount =function(array){
     let count=0;
     array.forEach(item=>{
         // if(item==1){

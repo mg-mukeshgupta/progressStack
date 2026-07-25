@@ -1,4 +1,4 @@
-# Task 14 - JavaScript- Arrays And Functions
+# Task 15 - JavaScript- Arrays And Functions
 
 This is a project/task to create different functions using defferent function logics like arrow and anonymous to get:
 1. Max number from the array.
