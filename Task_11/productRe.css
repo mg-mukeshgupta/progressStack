@@ -369,10 +369,127 @@ font-size: 1vw;
     height: 8vh;
     width: auto;
 }
+/* (min-width:770px)and ( */
+@media(max-width:1025px){
+    header{
+        height: auto;
+    }
+.hero{
+    height:50vh;
+}
+.product-wrapper{
+    height: 50vh;
+}
+}
 
-@media(max-width:1024px){
+@media(max-width:769px){
+    .body{
+        overflow: hidden;
+    }
+    header{
+        height: auto;
+    }
+    .navbar{
+        justify-content: space-evenly;
+    }
     .nav-link{
-        flex:1;
+        display: none;
+     }
+     .sch{
+        height: 2vh;
+        width:10vh;
+     }
+     .kart{
+        height: 2vh;
+     }
+     .logo{
+        font-size:1vh
+     }
+     .kart{
+        font-size: 1vh;
+        width:3vh;
+     }
+    #kart{
+        height:1vh;
+    }
+    .prf{
+        align-items: center;
+    }
+    .prf img{
+        /* align-self: center; */
+        height: 2vh;
+        width:auto;
+    }
+    .breadcrumb{
+        font-size: 1vh;
+    }
+    .hero{
+        margin-top:3vh;
+        overflow: hidden;
+        flex-direction: column;
+        flex-wrap:wrap;
+        height: auto;
+    }
+    .main-image-container{
+        height: 30vh;
+    }
+    .image-card{
+        margin-top:2vh;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+    }
+    .image-card img{
+        width:60vw;
+        height: 20vh;
+    }
+    .product-wrapper{
+        flex-direction: column-reverse;
+        /* height: 80vh; */
+    }
+    .product-details{
+        width:70%;
+        margin-top:2vh;
+        height: 40vh;
+    }
+    .quantity-box select{
+        height: 4vh;
+        width:4vh;
+        padding: 0;
+    }
+    .cart-btn{
+        width:10vw;
+        /* font-size:1vh; */
+    }
+    .shoe-gallery-slider{
+        display: block;
+        width: 100vw;
+    }
+    .scrollable-track{
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+    .gallery-card img{
+        width:30vw;
+        /* height: auto; */
+    }
+    .price-cont{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    .purchase-row{
+        margin: 0;
+        gap:2vw
+    }
+    .descript-cont{
+        width:100%;
+    }
+    .product-title{
+        font-size: 4vw;
+    }
+    .product-description{
+        font-size: 3vw;
     }
 }
 
