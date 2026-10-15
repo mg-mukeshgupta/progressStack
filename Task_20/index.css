@@ -198,6 +198,10 @@ section{
 .srt p{
     font-size:1.5rem;
 }
+
+
+
+
 /* Service Section */
 .service-page{
     background-color:rgba(241, 240, 240, 0.514);
@@ -230,6 +234,8 @@ section{
     /* justify-content: space-between; */
 }
 .right-service{
+    border-radius:20px;
+    border:none;
     width:400px;
     background-color:white;
     gap:20px;
@@ -283,4 +289,9 @@ font-size:2rem;
     display: flex;
     align-items: flex-end;
     padding:20px 0;
+}
+
+.block1-serv{
+    border:none;
+    border-radius:20px;
 }
