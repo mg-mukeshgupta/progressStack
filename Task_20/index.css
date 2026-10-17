@@ -237,11 +237,12 @@ section{
     border-radius:20px;
     border:none;
     width:400px;
-    background-color:white;
-    gap:20px;
-    padding:20px;
+    /* background-color:white; */
+    gap:10px;
+    /* padding:20px; */
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 hr{
     margin-top:20px;
@@ -291,7 +292,160 @@ font-size:2rem;
     padding:20px 0;
 }
 
+.block1-serv,.block2-serv{
+    height: 50%;
+    background-color:white;
+}
 .block1-serv{
+     display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+    overflow: hidden;
     border:none;
     border-radius:20px;
 }
+
+.aitems {
+    border-radius: 20px;
+    background-color: var(--dColor);
+    font-size: 1.3rem;
+    overflow: hidden;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    flex-shrink: 0;
+}
+.total {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 100px;
+    align-items: center;
+    flex-shrink: 0;
+}
+.total #amount {
+    text-align: left;
+}
+
+.item_head {
+    width: 100%;
+    background-color:rgba(241, 240, 240, 0.514);
+    /* background-color: var(--grey); */
+    display: grid;
+    grid-template-columns: 50px minmax(0, 1fr) 90px;
+    padding: 10px;
+    font-size: 1em;
+    flex-shrink: 0;
+}
+.default-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-height: 0;
+}
+
+.default-items img {
+    height: 60px;
+}
+#cart-items {
+    width: 100%;
+      flex: 1;
+ min-height: 0;
+    overflow-y: auto;
+}
+.cart-row {
+width: 100%;
+display: grid;
+grid-template-columns: 50px minmax(0, 1fr) 90px;
+align-items: center;
+padding: 8px 10px;
+gap: 0;
+}
+.cart-row p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+.block2-serv{
+    padding: 20px;
+    border-radius: 20px;
+}
+.booking{
+    /* align-self:baseline; */
+    margin-bottom: 5px;
+    padding-top:10px;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.name-field{
+    width:100%;
+    font-size: 1rem;
+    /* margin:10px; */
+}
+.name-field input{
+    margin:10px 0px;
+    border-radius:5px;
+    border-color: whitesmoke;
+    border-width: none;
+    width:95%;
+    height:40px;
+}
+.contact-fields{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:5px;
+    width:95%;
+}
+.email-field,.phone-field{
+    font-size:1em;
+    margin: 20px 0px;
+}
+.email-field,.phone-field label{
+    display: block;
+}
+.email-field input,.phone-field input{
+    width:100%;
+    margin-top:5px;
+    height:40px;
+     border-radius:5px;
+    border-color: whitesmoke;
+    border-width: none;
+}
+.book-button{
+    cursor: pointer;
+    align-self: baseline;
+    height:5vh;
+    margin:10px 0;
+    width:100%;
+    color:white;
+    font-size:1.2em;
+    border:none;
+    border-radius:10px;
+    background-color: rgb(70, 101, 255);
+}
+.booking-warning {
+    display: none;
+    width: 100%;
+    color: red;
+    font-size: 0.85rem;
+    text-align: center;
+    margin: 5px 0 0;
+}
+.booking-warning p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+.booking-warning img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+/* About section */
