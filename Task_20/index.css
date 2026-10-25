@@ -36,10 +36,29 @@ section{
     font-size: 2rem;
     font-weight: 500;
 }
-.list a{
-    font-size:1.2rem;
-    color:rgb(67, 67, 64);
-    text-decoration: none;
+.list a {
+  position: relative; 
+  padding-bottom: 5px;
+  font-size: 1.2rem;
+  color: rgb(67, 67, 64);
+  text-decoration: none;
+}
+
+.list a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;        
+  left: 0;        
+  width: 100%; 
+  height: 2px;         
+  background-color: #2563eb;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list a:hover::after {
+  transform: scaleX(1);
 }
 .list ul{
     display: flex;
@@ -146,6 +165,10 @@ section{
     border-radius:20px;
     padding:30px 90px;
     font-size:1.2rem;
+}
+.book-service img{
+    padding:0 5px;
+    width:2rem;
 }
 .right{
     width:100%;
@@ -277,10 +300,36 @@ font-size:2rem;
     color:blue;
 }
 .select-toggle button{
-    padding:15px 45px;
+    display: flex;
+    align-items: center;
+    font-size:1.1rem;
+    padding:12px 40px;
     border:none;
     border-radius:10px;
     align-items: center;
+}
+.select-toggle img{
+    padding: 1px;
+    height:1.2rem;
+}
+.rmv{
+    display: none;
+}
+.rmv button{
+    background-color: #ff8b8b41;
+    color:rgb(241, 71, 71);
+   display: flex;
+    align-items: center;
+    font-size:1rem;
+    padding:10px 40px;
+    border:none;
+    border-radius:10px;
+    align-items: center; 
+}
+.rmv img{
+    /* color:red; */
+     /* padding: 1px; */
+    height:1.5rem;
 }
 .info-cap{
     color:blue;
@@ -424,26 +473,15 @@ gap: 0;
     border-radius:10px;
     background-color: var(--lightblue);
 }
-.booking-warning {
-    display: none;
-    width: 100%;
-    color: red;
-    font-size: 0.85rem;
-    text-align: center;
-    margin: 5px 0 0;
-}
-.booking-warning p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    margin: 0;
-}
-.booking-warning img {
-    width: 16px;
-    height: 16px;
-    object-fit: contain;
-}
+ .send,.not-send{
+   display: none;
+ }
+ .not-send p{
+    color:red;
+ }
+ .send p{
+color:#008000;
+ }
 
 /* About section */
 #footer{
