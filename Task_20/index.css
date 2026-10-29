@@ -299,7 +299,10 @@ font-size:2rem;
 #serv-price{
     color:blue;
 }
-.select-toggle button{
+.select-toggle.active .add{
+display:none;
+}
+.add button{
     display: flex;
     align-items: center;
     font-size:1.1rem;
@@ -315,6 +318,9 @@ font-size:2rem;
 .rmv{
     display: none;
 }
+.select-toggle.active .rmv{
+    display: flex;
+}
 .rmv button{
     background-color: #ff8b8b41;
     color:rgb(241, 71, 71);
@@ -327,8 +333,6 @@ font-size:2rem;
     align-items: center; 
 }
 .rmv img{
-    /* color:red; */
-     /* padding: 1px; */
     height:1.5rem;
 }
 .info-cap{
@@ -473,10 +477,10 @@ gap: 0;
     border-radius:10px;
     background-color: var(--lightblue);
 }
- .send,.not-send{
+ .send,.not-send,.blank-field{
    display: none;
  }
- .not-send p{
+ .not-send p,.blank-field p{
     color:red;
  }
  .send p{
