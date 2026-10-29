@@ -17,8 +17,7 @@ In this project learn about how various event function in JavaScript helps creat
 ## How to Run
 Download the files and open `index.html` in any modern web browser (Chrome, Edge, Firefox, etc.) and follow the instruction to show the example:
 1. open the webpage using index.html.
-2. Interact with the block/ boxe named with color by clickiing on them.
-3. Write or input your name on the "Enter Your Name" form input and click Greet Button
+2. Interact with the add and remove buttons. 
 <!--
 #note
 If it shows any error or warning above or below inthe console just refresh and it might go away!

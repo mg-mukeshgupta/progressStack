@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const bookButton=document.querySelector('.book-button');
   const fullNameInput=document.getElementById('full-name');
   const emailInput=document.getElementById('email');
-  const phoneInput=document.getElementById('phone-number');
+  const phoneInput=document.getElementById('phone');
 
 
  selectToggles.forEach((toggle) => {
@@ -69,12 +69,12 @@ const buttonSentMsg=document.querySelector('.send');
 if(bookButton){
   bookButton.addEventListener('click',(e)=>{
     e.preventDefault();
-    if (buttonDefaultMsg[0]) buttonDefaultMsg[0].style.display = 'none';
-    if (buttonBlankField[0]) buttonBlankField[0].style.display = 'none';
-    if (buttonSentMsg[0]) buttonSentMsg[0].style.display = 'none';
+    if (buttonDefaultMsg) buttonDefaultMsg.style.display = 'none';
+    if (buttonBlankField) buttonBlankField.style.display = 'none';
+    if (buttonSentMsg) buttonSentMsg.style.display = 'none';
 
     if (cart.length === 0) {
-    buttonDefaultMsg[0].style.display = 'flex';
+    buttonDefaultMsg.style.display = 'flex';
       return;
     }
     if (!fullNameInput.value.trim() || !emailInput.value.trim() || !phoneInput.value.trim()) {
@@ -83,8 +83,8 @@ if(bookButton){
     }
 
       const orderDetails = cart
-        .map((item, i) => `${i + 1}. ${item.name} - ₹${item.price.toFixed(2)}`)
-        .join('\n');
+      .map((item, i) => `${i + 1}. ${item.name} - ₹${item.price.toFixed(2)}`)
+      .join('\n');
       
         const totalAmount = document.getElementById('amount').textContent;
       const templateParams = {
@@ -97,7 +97,8 @@ if(bookButton){
       emailjs.send('service_ik5ieof', 'template_08p35lk', templateParams)
         .then(() => {
           if (buttonSentMsg) buttonSentMsg.style.display = 'flex';
-          alert('Booking successful! A confirmation email has been sent.');
+          // alert('Booking successful! A confirmation email has been sent.');
+          console.log("email has been sent");
 
           cart = [];
           updatecartUI();

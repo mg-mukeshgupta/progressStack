@@ -1,5 +1,5 @@
 :root{
-    --lightblue:rgb(6, 159, 255);
+    --lightblue:rgb(53, 175, 252);
     --para:rgb(105, 105, 102);
 }
 *{
@@ -128,7 +128,7 @@ section{
     font-size:4rem;
 }
 .blue-cap{
-    color:rgb(6, 159, 255);
+    color:var(--lightblue);
 }
 .description{
     font-size:1.8rem;
@@ -159,7 +159,7 @@ section{
     align-items: center;
     flex-basis:400px;
     flex-shrink: 1;
-    background-color: rgb(6, 159, 255);
+    background-color: var(--lightblue);
     color:white;
     border:none;
     border-radius:20px;
@@ -188,7 +188,7 @@ section{
     height: 200px;
     margin-top:30px;
     width:100%;
-    background-color:rgb(6, 159, 255) ;
+    background-color:var(--lightblue) ;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -199,7 +199,7 @@ section{
     width:30vw;
 }
 .labels{
-    color:rgb(28, 28, 28);
+    color:rgb(36, 36, 36);
     display: flex;
     flex-direction: row;
     width:80vw;
@@ -218,7 +218,13 @@ section{
 .srt p{
     font-size:1.5rem;
 }
-
+.vr hr{
+    height:5rem;
+    width:2px;
+    border:none;
+    margin:0;
+    background-color:#59a6ee;
+}
 
 
 
@@ -480,7 +486,10 @@ gap: 0;
  .send,.not-send,.blank-field{
    display: none;
  }
- .not-send p,.blank-field p{
+  .not-send p{
+    color:red;
+  }
+.blank-field p{
     color:red;
  }
  .send p{
@@ -576,10 +585,11 @@ color:#008000;
     border:none;
     background-color: rgb(13, 141, 221);
     padding:20px;
-    font-size:1rem;
+    font-size:1.2rem;
 }
 .subscription-form input::placeholder{
-    color: rgb(65, 182, 255);
+    font-size: 1.2em;
+    color: rgb(150, 211, 248);
 
 }
 .name-fill{
